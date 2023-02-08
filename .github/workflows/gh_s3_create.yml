@@ -22,7 +22,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: s3_create
+        working-directory: ./environments/stage/s3_create
 
     steps:
       - name: Checkout
