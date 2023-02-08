@@ -16,7 +16,7 @@ terraform {
     bucket         = "app-webservice-github-workflow-terraform-tfstate-v1"
     key            = "ec2-tfstate/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "terraform-state-locking-s3-tfstate"
+    dynamodb_table = "terraform-state-locking-s3-tfstate-v1"
   }
 }
 

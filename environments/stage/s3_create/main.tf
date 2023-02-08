@@ -9,10 +9,11 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = var.region
 }
 
 module "tf-state" {
-  source      = "./modules/s3-bucket"
-  bucket_name = "app-webservice-github-workflow-terraform-tfstate-v1"
+  source              = "./modules/s3-bucket"
+  bucket_name         = var.bucket_name
+  dynamodb_table_name = var.dynamodb_table_name
 }
