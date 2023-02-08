@@ -1,5 +1,5 @@
 
-name: "Create ec2 instance"
+name: "create ec2 instance"
 
 on:
 #enable it for demo
@@ -97,7 +97,7 @@ jobs:
     defaults:
      run:
         shell: bash
-        working-directory: ./environments/stage/s3_create          
+        working-directory: ./environments/stage/web_app        
     steps:
       - name: Checkout
         uses: actions/checkout@v3
