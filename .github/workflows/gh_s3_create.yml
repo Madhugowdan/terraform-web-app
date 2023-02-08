@@ -53,11 +53,11 @@ jobs:
         continue-on-error: true 
         #|| github.event_name == 'push'
       
-      - uses: mshick/add-pr-comment@v2
-        with:
-          issue: ${{ steps.plan.outputs.issue }}
-          message: |
-           *** review the plan ***
+      # - uses: mshick/add-pr-comment@v2
+      #   with:
+      #     issue: ${{ steps.plan.outputs.issue }}
+      #     message: |
+      #      *** review the plan ***
     
 
       - name: Terraform Plan Status
