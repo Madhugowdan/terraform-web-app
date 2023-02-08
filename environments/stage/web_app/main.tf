@@ -21,7 +21,7 @@ terraform {
 }
 
 module "ec2-complete" {
-  source = "./modules/ec2-app"
+  source = "../../../modules/ec2-app/"
 
   region               = var.region
   windows_server_name  = var.windows_server_name
