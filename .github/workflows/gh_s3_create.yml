@@ -57,11 +57,13 @@ jobs:
       - name: Terraform Plan Status
         if: steps.plan.outcome == 'failure'
         run: exit 1
-        
+
       - name: Post Plan to GitHub PR
         uses: mshick/add-pr-comment@v1
         with:
           allow-repeats: true
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: 'github-actions[bot]'
           message: |
             ${{ steps.plan.outputs.stdout || steps.plan.outputs.stderr }}
 
