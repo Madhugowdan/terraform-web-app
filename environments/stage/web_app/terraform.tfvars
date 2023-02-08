@@ -12,4 +12,4 @@ sg_ports_egress      = [443, 3386, 8080]
 sg_protocal          = "tcp"
 root_volum           = 40
 subnet_name_1        = "intranet-0"
-subnet_name_2        = "intranet-1" 
+subnet_name_2        = "intranet-1"
