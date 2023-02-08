@@ -13,10 +13,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "app-webservice-github-workflow-terraform-tfstate-v1"
+    bucket         = "app-webservice-github-workflow-terraform-tfstate-v5"
     key            = "ec2-tfstate/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "terraform-state-locking-s3-tfstate-v1"
+    dynamodb_table = "terraform-state-locking-s3-tfstate-v5"
   }
 }
 
