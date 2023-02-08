@@ -63,7 +63,7 @@ jobs:
         with:
           allow-repeats: true
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          repo-token-user-login: 'github-actions[bot]'
+          #repo-token-user-login: 'github-actions[bot]'
           message: |
             ${{ steps.plan.outputs.stdout || steps.plan.outputs.stderr }}
 
