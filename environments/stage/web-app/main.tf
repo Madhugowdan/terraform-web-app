@@ -21,7 +21,7 @@ terraform {
 }
 
 module "ec2-complete" {
-  source = "./modules/ec2-app"
+  source = "../../../modules/web-app_modul"
 
   region               = var.region
   windows_server_name  = var.windows_server_name
@@ -38,5 +38,6 @@ module "ec2-complete" {
   root_volum           = var.root_volum
   subnet_name_1        = var.subnet_name_1
   subnet_name_2        = var.subnet_name_2
+  ami_owner            = var.ami_owner
 
 }

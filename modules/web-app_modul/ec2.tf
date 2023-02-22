@@ -15,7 +15,7 @@ data "aws_ami" "windows" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-  owners = ["801119661308"] # Canonical
+  owners = ["${var.ami_owner}"] # Canonical
 }
 
 resource "aws_instance" "windows_ec2" {

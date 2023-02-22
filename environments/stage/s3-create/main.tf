@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "tf-state" {
-  source              = "./modules/s3-bucket"
+  source              = "../../../modules/s3-bucket_modul"
   bucket_name         = var.bucket_name
   dynamodb_table_name = var.dynamodb_table_name
 }

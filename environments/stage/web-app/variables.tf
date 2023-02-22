@@ -7,9 +7,12 @@ variable "region" {
 variable "windows_server_name" {
   description = " define windows server name to be matched "
   type        = string
-  default     = "Windows_Server-2019-English-Full-Base-*"
+  default     = "ec2-windows-ami-dot-Net-app"
 }
 
+variable "ami_owner" {
+  type = number
+}
 variable "instance_count" {
   description = " define the count of number of ec2 instance to be deployed"
   type        = number
